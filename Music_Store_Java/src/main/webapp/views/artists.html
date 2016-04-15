@@ -1,0 +1,18 @@
+<div class="panel panel-default" ng-init="getArtists()">
+  <div class="panel-heading">
+    <h3 class="panel-title">All Artists</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+    	<div ng-repeat="artist in artists">
+    		<div class="col-md-6">
+    			<div class="col-md-6">
+    				<h4>{{artist.artist_name}}</h4>
+    				<p>{{artist.artist_birthdate}}</p>
+    				<a class="btn btn-primary" href="#/songs/artists/details/{{artist.artist_id}}">View Artist</a>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+  </div>
+</div>

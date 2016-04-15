@@ -1,0 +1,21 @@
+<a href="#/songs">Go Back</a>
+<div class="panel panel-default" ng-init="getSong()">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{song.song_name}}</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-8">
+        <ul class="list-group">
+          <li class="list-group-item">Genre: {{song.song_genre}}</li>
+          <li class="list-group-item">time: {{song.song_time}}</li>
+          <li class="list-group-item">Prce: {{song.song_price}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<div class="pull-right">
+  <a href="#/songs/edit/{{song.song_id}}">Edit</a> |  <a href="#" ng-click="removeSong(song.song_id)">Delete</a>
+</div>

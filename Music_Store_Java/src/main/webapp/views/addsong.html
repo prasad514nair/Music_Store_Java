@@ -1,0 +1,54 @@
+<a href="#/songs">Go Back</a>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add Song</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-12">
+      <form ng-submit="addSong()">
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" class="form-control" ng-model="song.song_name" placeholder="Name">
+        </div>
+        <div class="form-group">
+          <label>Genre</label>
+          <select ng-model="song.genre" class="form-control">
+            <option value="Rock">Rock</option>
+            <option value="Jazz">Jazz</option>
+            <option value="Classic">Classic</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Artist</label>
+          <input type="text" class="form-control" ng-model="artist.artist_name" placeholder="Artist">
+        </div>
+        <div class="form-group">
+          <label>Album</label>
+          <input type="text" class="form-control" ng-model="album.album_name" placeholder="Album">
+        </div>
+        <div class="form-group">
+          <label>Time</label>
+          <input type="text" class="form-control" ng-model="song.song_time" placeholder="Time">
+        </div>
+        <div class="form-group">
+          <label>Song Price</label>
+          <input type="text" class="form-control" ng-model="song.song_price" placeholder="Song Price">
+        </div>
+        <div class="form-group">
+          <label>Album Price</label>
+          <input type="text" class="form-control" ng-model="album.album_price" placeholder="Album Price">
+        </div>
+     
+        <div class="form-group">
+          <label>Artist Birthdate</label>
+          <input type="text" class="form-control" ng-model="artist.artist_birthdate" placeholder="MM-DD-YYYY">
+        </div>
+       
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+    </div>
+  </div>
+</div>
